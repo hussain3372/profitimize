@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="scientific.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="./scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Scientific Calculator</h1>
+                <div id="scientific-calculator" class="calculator">
+                    <input type="text" id="display" disabled>
+                    <div class="buttons">
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="splappendToDiay('(')">(</button>
+                        <button onclick="appendToDisplay(')')">)</button>
+                        <button onclick="appendToDisplay('/')">/</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('*')">*</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('-')">-</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('+')">+</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
+                        <button onclick="calculateResult()">=</button>
+                        <button onclick="appendToDisplay('Math.sin(')">sin</button>
+                        <button onclick="appendToDisplay('Math.cos(')">cos</button>
+                        <button onclick="appendToDisplay('Math.tan(')">tan</button>
+                        <button onclick="appendToDisplay('Math.log(')">log</button>
+                        <button onclick="appendToDisplay('Math.exp(')">exp</button>
+                        <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+                        <button onclick="appendToDisplay('**')">^</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/2.jpg" class="addimg" alt="">
+            </div>
+        </div>
+        <p>
+            The Scientific Calculator is a comprehensive tool designed to perform a wide range of mathematical
+            operations. Unlike basic calculators, it includes advanced functions such as trigonometric,
+            logarithmic, and exponential calculations, making it ideal for students, engineers, and
+            professionals in scientific fields.
+
+            <br>
+            <br>
+            The calculator features a user-friendly interface with a clear display screen that shows the current
+            input and results of calculations. The interface includes buttons for numbers 0-9 and essential
+            arithmetic operations such as addition (+), subtraction (-), multiplication (*), and division (/).
+
+            <br>
+            <br>
+            In addition to basic arithmetic, the calculator offers specialized functions:
+
+
+            <br>
+            <br>
+            Trigonometric Functions: Buttons for sine (sin), cosine (cos), and tangent (tan) allow users to
+            calculate the trigonometric ratios of angles.
+            Logarithmic Functions: The log button computes the natural logarithm (base e) of a number, and the
+            exp button calculates the exponential function.
+            <br>
+            Square Root and Power: The square root (√) button computes the square root of a number, while the
+            power (^) button raises a number to a specified exponent.
+            Additional features include parentheses for grouping expressions and a clear (C) button to reset the
+            display. This comprehensive functionality makes the Scientific Calculator an invaluable tool for
+            complex mathematical problem-solving.
+        </p>
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+    <script src="scientific.js"></script>
+</body>
+
+</html>

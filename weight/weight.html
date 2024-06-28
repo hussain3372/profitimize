@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./weight.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="./weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Weight Converter</h1>
+                <div id="weight-converter" class="calculator">
+                    <label for="weight">Enter Weight:</label>
+                    <input type="number" id="weight" placeholder="Enter weight">
+
+                    <label for="from-unit">From:</label>
+                    <select id="from-unit">
+                        <option value="kg">Kilograms</option>
+                        <option value="lbs">Pounds</option>
+                        <option value="gram">grams</option>
+                        <option value="miligram">Milligrams</option>
+                        <option value="carats">Carats</option>
+                    </select>
+
+                    <label for="to-unit">To:</label>
+                    <select id="to-unit">
+                        <option value="kg">Kilograms</option>
+                        <option value="lbs">Pounds</option>
+                        <option value="gram">grams</option>
+                        <option value="miligram">Milligrams</option>
+                        <option value="carats">Carats</option>
+                    </select>
+
+                    <button onclick="convertWeight()">Convert</button>
+
+                    <h3>Result:</h3>
+                    <p id="weight-result"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Weight Converter</h3>
+        <p>
+            The Weight Converter is a versatile tool designed to help you easily convert between different units of
+            weight. Whether you need to convert kilograms to pounds, grams to milligrams, or any other weight
+            measurement, this converter simplifies the process and provides accurate results.
+        </p>
+        <br>
+        <h3>Key Features:</h3>
+        <p>
+            <strong>User-Friendly Interface:</strong> The converter features an intuitive and easy-to-use interface,
+            making it accessible for users of all ages and technical backgrounds.
+        </p>
+        <br>
+        <p>
+            <strong>Input Fields:</strong> Users can input the weight value and select the units they wish to convert
+            from and to, including options like kilograms, pounds, grams, milligrams, and carats.
+        </p>
+        <br>
+        <p>
+            <strong>Convert Button:</strong> After entering the weight and selecting the units, users can simply click
+            the "Convert" button to get the result.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./weight.js"></script>
+</body>
+
+</html>

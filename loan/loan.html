@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./loan.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="./loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Loan Calculator</h1>
+                <div id="loan-calculator" class="calculator">
+                    <label for="loan-amount">Enter Loan Amount:</label>
+                    <input type="number" id="loan-amount" placeholder="Enter your loan amount">
+
+                    <label for="loan-term-years">Loan Term (years):</label>
+                    <input type="number" id="loan-term-years" placeholder="Enter loan term in years">
+
+                    <label for="loan-term-months">Loan Term (months):</label>
+                    <input type="number" id="loan-term-months" placeholder="Enter loan term in months">
+
+                    <label for="interest-rate">Interest Rate (%):</label>
+                    <input type="number" id="interest-rate" placeholder="%">
+
+                    <button onclick="calculateLoan()">Calculate Loan</button>
+
+                    <h3>Results:</h3>
+                    <p id="monthly-payment"></p>
+                    <p id="total-payment"></p>
+                    <p id="total-interest"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Loan Calculator</h3>
+        <p>The Loan Calculator is a user-friendly tool designed to help individuals and businesses determine the monthly
+            payments, total payment, and total interest for a loan. By inputting the loan amount, loan term (in years
+            and months), and the interest rate, users can quickly calculate their financial obligations for a given
+            loan.</p>
+
+        <p>Whether you are considering taking a loan for purchasing a home, car, or funding a business venture,
+            understanding the financial implications is crucial. This calculator allows users to see how different loan
+            amounts, terms, and interest rates affect their monthly payments and overall loan cost.</p>
+
+        <p><strong>Key Features:</strong></p>
+
+        <p><strong>1. Enter Loan Amount:</strong><br>
+            The loan amount field allows users to input the principal amount they wish to borrow. This is the initial
+            sum of money that will be financed and repaid over the loan term. It is essential to enter the correct loan
+            amount to get accurate calculations.</p>
+
+        <p><strong>2. Loan Term (years and months):</strong><br>
+            Users can specify the loan term in both years and months. This flexibility accommodates different loan
+            structures and durations. For example, a home loan might be spread over 30 years, whereas a car loan might
+            be repaid within 5 years. The calculator considers both years and months to provide precise results.</p>
+
+        <p><strong>3. Interest Rate (%):</strong><br>
+            The interest rate field is where users input the annual interest rate for the loan. The interest rate
+            significantly impacts the total cost of the loan and the monthly payment amount. A lower interest rate
+            results in lower monthly payments and less total interest paid over the loan term.</p>
+
+        <p><strong>4. Calculate Loan Button:</strong><br>
+            After entering all the necessary information, users can click the "Calculate Loan" button to generate the
+            results. This initiates the calculation process and provides immediate feedback on the financial details of
+            the loan.</p>
+
+        <p><strong>Results Section:</strong></p>
+
+        <p><strong>Monthly Payment:</strong><br>
+            The monthly payment result shows the amount that needs to be paid every month to repay the loan within the
+            specified term. It includes both principal and interest components. Understanding the monthly payment helps
+            borrowers plan their budgets and manage their finances effectively.</p>
+
+        <p><strong>Total Payment:</strong><br>
+            The total payment result represents the sum of all monthly payments made over the loan term. It includes the
+            principal amount and the total interest paid. This figure gives a clear picture of the total cost of the
+            loan, which is crucial for long-term financial planning.</p>
+
+        <p><strong>Total Interest:</strong><br>
+            The total interest result indicates the cumulative interest paid over the life of the loan. This is the
+            extra amount borrowers pay in addition to the principal. Knowing the total interest helps borrowers
+            understand the true cost of borrowing and evaluate the affordability of the loan.</p>
+
+        <p>Using the Loan Calculator:</p>
+
+        <p>The Loan Calculator is straightforward and intuitive to use. Simply follow these steps:</p>
+
+        <p>1. Enter the desired loan amount in the "Enter Loan Amount" field.<br>
+            2. Specify the loan term in years and/or months in the respective fields.<br>
+            3. Input the annual interest rate in the "Interest Rate (%)" field.<br>
+            4. Click the "Calculate Loan" button to generate the results.</p>
+
+        <p>The results section will display the monthly payment, total payment, and total interest. Users can adjust the
+            input values to explore different loan scenarios and find the most suitable loan option for their needs.</p>
+
+        <p>Importance of Loan Calculators:</p>
+
+        <p>Loan calculators play a vital role in financial planning. They provide borrowers with valuable insights into
+            their loan obligations, helping them make informed decisions. By understanding the monthly payments, total
+            payment, and total interest, borrowers can compare different loan offers, negotiate better terms, and ensure
+            they can comfortably meet their repayment obligations.</p>
+
+        <p>In addition to personal use, loan calculators are also beneficial for financial advisors, loan officers, and
+            lenders. They can use these tools to assist clients in understanding their loan options and making sound
+            financial choices.</p>
+
+        <p>Overall, the Loan Calculator is an essential tool for anyone considering taking a loan. It simplifies complex
+            calculations and provides clear, actionable information, enabling users to navigate the borrowing process
+            with confidence and ease.</p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./loan.js"></script>
+</body>
+
+</html>

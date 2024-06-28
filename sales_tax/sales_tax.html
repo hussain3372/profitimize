@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./sales_tax.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Calculator</a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="./speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Sales Tax Calculator</h1>
+                <div id="sales-tax-calculator" class="calculator">
+                    <label for="before">Before Tax Price</label>
+                    <input type="number" id="before" placeholder="Enter Before Tax Price">
+
+                    <label for="sales">Sales Tax Rate (%)</label>
+                    <input type="number" id="sales" placeholder="Enter Sales Tax Rate">
+
+                    <button onclick="calculatesalestax()">Calculate Sales Tax</button>
+
+                    <h3>Result:</h3>
+                    <p id="before-tax-price"></p>
+                    <p id="sales-tax"></p>
+                    <p id="after-tax-price"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Sales Tax Calculator Description</h3>
+        <p>
+            This Sales Tax Calculator helps you determine the amount of sales tax you need to pay on a given purchase.
+            <br>
+            Simply enter the before-tax price of the item and the sales tax rate to calculate the total sales tax and
+            the final price after tax. <br>
+            Follow these steps: <br>
+            1. Enter the price of the item before tax in the "Before Tax Price" field. <br>
+            2. Enter the applicable sales tax rate in the "Sales Tax Rate (%)" field. <br>
+            3. Click on the "Calculate Sales Tax" button to see the results. <br>
+            The calculator will display: <br>
+            - The price of the item before tax. <br>
+            - The calculated sales tax amount. <br>
+            - The total price after including the sales tax.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./sales_tax.js"></script>
+</body>
+
+</html>

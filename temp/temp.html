@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./temp.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="./temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Temperature Calculator</h1>
+                <div id="temperature-calculator" class="calculator">
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" placeholder="Enter temperature">
+
+                    <label for="from-unit">From unit:</label>
+                    <select name="from-unit" id="from-unit">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="rankine">Rankine (°R)</option>
+                        <option value="reaumur">Réaumur (°Ré)</option>
+                    </select>
+
+                    <label for="to-unit">To unit:</label>
+                    <select name="to-unit" id="to-unit">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="rankine">Rankine (°R)</option>
+                        <option value="reaumur">Réaumur (°Ré)</option>
+                    </select>
+
+                    <button onclick="convertTemperature()">Convert Temperature</button>
+
+                    <h3>Results:</h3>
+                    <p id="result-converted"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Temperature Calculator Description</h3>
+        <p>
+            A temperature calculator is an essential tool for converting temperature values from one unit to another
+            with ease. This calculator supports various temperature units such as Celsius (°C), Fahrenheit (°F), Kelvin
+            (K), Rankine (°R), and Réaumur (°Ré). Temperature conversion is crucial in numerous fields including
+            science, engineering, and daily life activities. Whether you are cooking, conducting scientific research, or
+            traveling to different parts of the world, being able to convert temperature units accurately is invaluable.
+        </p>
+        <br>
+        <p>
+            The Celsius scale, also known as the centigrade scale, is widely used around the world, especially in
+            countries that adhere to the metric system. The Fahrenheit scale, on the other hand, is primarily used in
+            the United States and its territories. The Kelvin scale is the standard unit of measurement for temperature
+            in the scientific community and is used extensively in physics and chemistry. The Rankine scale, similar to
+            Kelvin, is used in thermodynamic temperature measurement, primarily in engineering fields in the United
+            States. Lastly, the Réaumur scale, although less common today, was once widely used in Europe for various
+            scientific applications.
+        </p>
+        <br>
+        <p>
+            Our temperature calculator simplifies the process of converting between these units. To use the calculator,
+            simply input the temperature value you wish to convert, select the unit of the temperature you have entered
+            from the dropdown menu labeled "From unit," and choose the unit to which you want to convert the temperature
+            from the dropdown menu labeled "To unit." Once you have made your selections, click the "Convert
+            Temperature" button to instantly see the converted temperature value.
+        </p>
+        <br>
+        <p>
+            This tool is designed to be user-friendly and efficient, ensuring that you can perform conversions quickly
+            without any hassle. The ability to convert temperatures accurately can help in various scenarios. For
+            instance, if you are a traveler, you might need to convert temperatures to understand weather forecasts in
+            different countries. For students and professionals in the scientific community, converting temperatures is
+            often a daily necessity to match the standard units used in research and documentation.
+        </p>
+        <br>
+        <p>
+            Moreover, this temperature calculator can be a valuable asset for anyone involved in cooking. Recipes from
+            different parts of the world may list oven temperatures in different units, and converting these
+            temperatures correctly ensures that your dishes turn out perfect. Similarly, in the field of HVAC (heating,
+            ventilation, and air conditioning), accurate temperature conversions are essential for system design,
+            maintenance, and troubleshooting.
+        </p>
+        <br>
+        <p>
+            This calculator not only enhances accuracy but also saves time, eliminating the need to refer to conversion
+            charts or perform manual calculations. The interface is intuitive, with clearly labeled fields and dropdown
+            menus to guide you through the process. By providing instant results, it helps in making quick decisions
+            based on the converted temperatures.
+        </p>
+        <br>
+        <p>
+            In educational settings, this temperature calculator can be a useful teaching aid. Teachers can use it to
+            demonstrate temperature conversions during lessons, and students can use it to check their homework or
+            experiment results. The inclusion of multiple temperature scales also provides a comprehensive understanding
+            of different measurement systems used across various disciplines.
+        </p>
+        <br>
+        <p>
+            In summary, this temperature calculator is a versatile and reliable tool designed to cater to a wide range
+            of users, from everyday individuals to professionals in scientific and engineering fields. Its ease of use,
+            accuracy, and efficiency make it an indispensable tool for anyone needing to convert temperatures regularly.
+            Whether for personal, educational, or professional use, this temperature calculator is your go-to solution
+            for all temperature conversion needs.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© Copyright 2024 Vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./temp.js"></script>
+</body>
+
+</html>

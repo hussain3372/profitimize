@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Converter</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./height.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Calculator</a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="./height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"><img src="../images/1.jpg" class="addimg" alt=""></div>
+            <div class="main">
+                <h1>Height Converter</h1>
+                <div id="height-converter" class="calculator">
+                    <label for="height-input">Enter Height:</label>
+                    <input type="number" id="height-input" placeholder="Enter height">
+
+                    <label for="from-unit">From:</label>
+                    <select id="from-unit">
+                        <option value="cm">Centimeters</option>
+                        <option value="m">Meters</option>
+                        <option value="in">Inches</option>
+                        <option value="ft">Feet</option>
+                    </select>
+
+                    <label for="to-unit">To:</label>
+                    <select id="to-unit">
+                        <option value="cm">Centimeters</option>
+                        <option value="m">Meters</option>
+                        <option value="in">Inches</option>
+                        <option value="ft">Feet</option>
+                    </select>
+
+                    <button onclick="convertHeight()">Convert</button>
+
+                    <h3>Result:</h3>
+                    <p id="height-result"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"><img src="../images/4.avif" class="addimg" alt=""></div>
+        </div>
+        <h3>Height Converter</h3>
+        <p>
+            The Height Converter tool is designed to make it simple and easy to convert between various units of height
+            measurement. Whether you're converting from centimeters to inches or from feet to meters, this tool has you
+            covered. Simply enter the height value you wish to convert, select the unit you're converting from and the
+            unit you're converting to, and click the convert button. The result will be displayed instantly. This tool
+            is perfect for anyone needing quick height conversions, whether for academic purposes, travel planning, or
+            just out of curiosity. Its user-friendly interface ensures that conversions are done swiftly and accurately.
+            <br><br>
+            <strong>Key Features:</strong>
+            <br>
+            - Easy input of height values.
+            <br>
+            - Multiple units to choose from, including centimeters, meters, inches, and feet.
+            <br>
+            - Instant conversion results displayed clearly.
+            <br>
+            - Intuitive design for a seamless user experience.
+            <br><br>
+            This height converter is an essential tool for students, professionals, and anyone who needs to switch
+            between different units of measurement frequently. Whether you're comparing height measurements across
+            different systems or just need a quick conversion for a project, this tool is built to handle it all with
+            precision and ease.
+            <br><br>
+            The interface is straightforward: enter your height value, choose your current unit, select the unit you
+            want to convert to, and click 'Convert'. The conversion process is instantaneous, ensuring you get the
+            results you need without any delay.
+            <br><br>
+            Additionally, the height converter is perfect for fitness enthusiasts and athletes who need to measure their
+            height for training and competition purposes. Accurate height measurements are crucial in many sports and
+            this tool ensures you have the right numbers at your fingertips.
+            <br><br>
+            <strong>Why Use Our Height Converter?</strong>
+            <br>
+            Our height converter is designed with ease of use and accuracy in mind. Unlike other converters that might
+            be cluttered or complicated, ours is clean and straightforward, making it the best choice for anyone needing
+            quick and accurate height conversions. The tool is constantly updated to ensure it meets the highest
+            standards of accuracy and functionality.
+            <br><br>
+            In conclusion, the Height Converter tool is an indispensable resource for converting height measurements
+            across different units. Whether for educational purposes, sports, travel, or everyday use, this tool
+            provides a reliable and efficient way to get accurate height conversions quickly. Try it out today and
+            experience the convenience it offers.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad"><img src="../images/3.jpg" class="addimg1" alt=""></div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+    <script src="./height.js"></script>
+</body>
+
+</html>

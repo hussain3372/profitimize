@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculators</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./area.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Calculator</a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="./weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Area Calculator</h1>
+                <h3><span id="changearea1">Area</span> Calculator</h3>
+                <div id="area-calculator" class="calculator">
+                    <label for="length">Length / Radius:</label>
+                    <input type="number" id="length" placeholder="Enter length or radius">
+
+                    <label for="width" id="width-label" style="display:none;">Width:</label>
+                    <input type="number" id="width" placeholder="Enter width" style="display:none;">
+
+                    <label for="height" id="height-label" style="display:none;">Height / Angle:</label>
+                    <input type="number" id="height" placeholder="Enter height or angle" style="display:none;">
+
+                    <label for="shapes">Select the shape:</label>
+                    <select name="shapes" id="shapes" onchange="toggleInputs()">
+                        <option value="Rectangle">Rectangle</option>
+                        <option value="Triangle">Triangle</option>
+                        <option value="Circle">Circle</option>
+                        <option value="Ellipse">Ellipse</option>
+                        <option value="Sector">Sector</option>
+                    </select>
+
+                    <button onclick="calculateArea()">Calculate <span id="changearea">Area</span></button>
+
+                    <h3>Results:</h3>
+                    <p id="result-area"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Area Calculator Description</h3>
+        <br>
+        The Area Calculator is a versatile tool designed to help you quickly and accurately calculate the area of various geometric shapes. Whether you are a student, a teacher, an engineer, or simply someone who needs to determine the area for a project or personal use, this calculator provides a straightforward and efficient solution. The calculator supports a variety of shapes, including rectangles, triangles, circles, and ellipses, making it a comprehensive tool for a wide range of applications.
+        <br><br>
+        <h3>How to Use the Area Calculator</h3>
+        <br>
+        Using the Area Calculator is simple and intuitive. Follow these steps to calculate the area of your chosen shape:
+        <br><br>
+        1. **Enter the Dimensions**:
+        <br>
+        Start by entering the required dimensions for the shape you want to calculate. For a rectangle, you need to enter the length and width. For a triangle, you need to enter the base and height. For a circle, you only need to enter the radius, and for an ellipse, you need to enter the major and minor axes.
+        <br><br>
+        2. **Select the Shape**:
+        <br>
+        Use the dropdown menu to select the shape for which you want to calculate the area. The available options include Rectangle, Triangle, Circle, and Ellipse. Each shape has its own unique formula for area calculation.
+        <br><br>
+        3. **Calculate the Area**:
+        <br>
+        Once you have entered the required dimensions and selected the shape, click on the "Calculate Area" button. The calculator will instantly compute the area based on the provided dimensions and display the result in the results section.
+        <br><br>
+        <h3>Supported Shapes and Formulas</h3>
+        <br>
+        The Area Calculator supports the following shapes, each with its specific formula:
+        <br><br>
+        **Rectangle**:
+        <br>
+        For rectangles, the area is calculated using the formula:
+        <br>
+        Area = Length × Width
+        <br>
+        This formula is straightforward and requires you to input the length and width of the rectangle.
+        <br><br>
+        **Triangle**:
+        <br>
+        For triangles, the area is calculated using the formula:
+        <br>
+        Area = 0.5 × Base × Height
+        <br>
+        You need to input the base and the height of the triangle to get the area.
+        <br><br>
+        **Circle**:
+        <br>
+        For circles, the area is calculated using the formula:
+        <br>
+        Area = π × Radius²
+        <br>
+        Simply enter the radius of the circle, and the calculator will use the value of π (approximately 3.14159) to compute the area.
+        <br><br>
+        **Ellipse**:
+        <br>
+        For ellipses, the area is calculated using the formula:
+        <br>
+        Area = π × Major Axis × Minor Axis
+        <br>
+        You need to enter the lengths of the major and minor axes to get the area.
+        <br><br>
+        <h3>Applications of the Area Calculator</h3>
+        <br>
+        The Area Calculator is useful in a variety of fields and for numerous applications:
+        <br><br>
+        **Education**:
+        <br>
+        Students and teachers can use the calculator to quickly check homework and classwork involving area calculations for different shapes. It can also be a valuable tool for learning and understanding geometric concepts.
+        <br><br>
+        **Engineering and Construction**:
+        <br>
+        Engineers and construction professionals often need to calculate the area of different sections and components in their projects. This calculator can provide quick and accurate results, helping to streamline the planning and design process.
+        <br><br>
+        **Interior Design and Landscaping**:
+        <br>
+        Interior designers and landscapers can use the Area Calculator to determine the amount of material needed for flooring, tiling, and garden layouts. Knowing the precise area can help in making informed decisions and reducing waste.
+        <br><br>
+        **Personal Projects**:
+        <br>
+        For DIY enthusiasts and hobbyists, the Area Calculator can assist in projects such as home renovations, crafting, and other creative endeavors where area measurement is essential.
+        <br><br>
+        <h3>Advantages of Using the Area Calculator</h3>
+        <br>
+        The Area Calculator offers several advantages:
+        <br><br>
+        **Accuracy**:
+        <br>
+        By using the precise formulas for each shape, the calculator ensures accurate area calculations every time.
+        <br><br>
+        **Convenience**:
+        <br>
+        With a user-friendly interface, the calculator makes it easy to enter dimensions and select shapes, providing quick results without the need for manual calculations.
+        <br><br>
+        **Versatility**:
+        <br>
+        Supporting a wide range of shapes, the calculator is versatile and suitable for various tasks and applications.
+        <br><br>
+        **Efficiency**:
+        <br>
+        The calculator saves time by providing instant results, allowing you to focus on other aspects of your project or study.
+        <br><br>
+        In conclusion, the Area Calculator is a valuable tool for anyone needing to calculate the area of geometric shapes. Its ease of use, accuracy, and versatility make it an essential resource for students, professionals, and hobbyists alike.
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <script src="./area.js"></script>
+</body>
+
+</html>

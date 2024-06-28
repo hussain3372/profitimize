@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./volume.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="./volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Volume Calculator</h1>
+                <h3><span id="changevolume1">Volume</span> Calculator</h3>
+                <div id="volume-calculator" class="calculator">
+                    <label for="length">Length / Radius:</label>
+                    <input type="number" id="length" placeholder="Enter length or radius">
+
+                    <label for="width" id="width-label" style="display:none;">Width:</label>
+                    <input type="number" id="width" placeholder="Enter width" style="display:none;">
+
+                    <label for="height" id="height-label" style="display:none;">Height:</label>
+                    <input type="number" id="height" placeholder="Enter height" style="display:none;">
+
+                    <label for="shapes">Select the shape:</label>
+                    <select name="shapes" id="shapes" onchange="toggleInputs()">
+                        <option value="Cube">Cube</option>
+                        <option value="Cylinder">Cylinder</option>
+                        <option value="Sphere">Sphere</option>
+                        <option value="Cone">Cone</option>
+                    </select>
+
+                    <button onclick="calculateVolume()">Calculate <span id="changevolume">Volume</span></button>
+
+                    <h3>Results:</h3>
+                    <p id="result-volume"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Volume Calculator Description</h3>
+        <p>
+            A volume calculator is a useful tool for determining the volume of various shapes. Volume is a measure of
+            the amount of space an object occupies and is commonly measured in cubic units. The volume calculator can
+            compute the volume for several geometric shapes such as cubes, cylinders, spheres, and cones. Each shape has
+            its own unique formula for calculating volume, and understanding these formulas can help in a wide range of
+            applications from everyday tasks to complex engineering problems.
+            <br><br>
+            <strong>Cube:</strong> A cube is a three-dimensional shape with six equal square faces. To calculate the
+            volume of a cube, you need to know the length of one of its sides. The formula for the volume of a cube is:
+            <br>
+            Volume = side × side × side or Volume = side<sup>3</sup>
+            <br><br>
+            <strong>Cylinder:</strong> A cylinder is a three-dimensional shape with two parallel circular bases
+            connected by a curved surface. The volume of a cylinder can be calculated if you know the radius of the base
+            and the height of the cylinder. The formula for the volume of a cylinder is:
+            <br>
+            Volume = π × radius<sup>2</sup> × height
+            <br><br>
+            <strong>Sphere:</strong> A sphere is a perfectly round three-dimensional shape. The volume of a sphere
+            depends on its radius. The formula for the volume of a sphere is:
+            <br>
+            Volume = 4/3 × π × radius<sup>3</sup>
+            <br><br>
+            <strong>Cone:</strong> A cone is a three-dimensional shape with a circular base and a single vertex. To find
+            the volume of a cone, you need to know the radius of the base and the height of the cone. The formula for
+            the volume of a cone is:
+            <br>
+            Volume = 1/3 × π × radius<sup>2</sup> × height
+            <br><br>
+            Using a volume calculator can save time and reduce the potential for errors in these calculations. Simply
+            input the required dimensions for the shape you are working with, and the calculator will apply the
+            appropriate formula to provide the volume.
+            <br><br>
+            The importance of knowing how to calculate volume extends beyond academic exercises. In the real world,
+            volume calculations are crucial in a variety of fields such as construction, manufacturing, shipping, and
+            many scientific disciplines. For example, in construction, knowing the volume of concrete needed to fill a
+            space ensures that the correct amount of material is ordered, avoiding wastage and additional costs. In
+            manufacturing, understanding the volume of a product can help in designing packaging and optimizing shipping
+            containers. In scientific research, accurately measuring the volume of substances is essential for
+            experiments and analysis.
+            <br><br>
+            Additionally, volume calculations can be important in everyday life. For instance, when cooking, knowing the
+            volume of a container can help in measuring ingredients more accurately. When planning a garden,
+            understanding the volume of soil needed for planters can ensure healthy plant growth. Even in activities
+            like aquarium maintenance, knowing the volume of the tank is important for determining the correct amount of
+            water treatments.
+            <br><br>
+            Overall, a volume calculator is a versatile tool that can simplify many tasks and provide accurate
+            measurements for a wide range of applications. Whether you are a student, professional, or hobbyist,
+            understanding and calculating volume is a valuable skill.
+            <br><br>
+            This volume calculator is designed to be user-friendly and accessible. It features an intuitive interface
+            where you can select the shape of the object, enter the necessary dimensions, and receive the volume
+            instantly. It is an excellent resource for anyone looking to perform quick and accurate volume calculations.
+            <br><br>
+            Take advantage of this tool to make your calculations more efficient and reliable. Whether you are working
+            on a school project, professional assignment, or personal task, this volume calculator can help you achieve
+            precise results with ease.
+            <br><br>
+            Start using the volume calculator today and experience the convenience of accurate and quick volume
+            measurements for all your needs.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© Copyright 2024 Vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./volume.js"></script>
+</body>
+
+</html>

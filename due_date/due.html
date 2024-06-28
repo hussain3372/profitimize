@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Due Date Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./due.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="./due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Pregnancy Due Date Calculator</h1>
+                <div id="pregnancy-calculator" class="calculator">
+                    <label for="input-method">Select Input Method:</label>
+                    <select id="input-method" onchange="toggleInputMethod()">
+                        <option value="ultrasound">Ultrasound Date</option>
+                        <option value="last-period">Last Period Date</option>
+                        <option value="due-date">Due Date</option>
+                    </select>
+
+                    <div id="ultrasound-input" class="input-section">
+                        <label for="ultrasound-date">Enter Ultrasound Date:</label>
+                        <input type="date" id="ultrasound-date">
+                    </div>
+
+                    <div id="last-period-input" class="input-section" style="display: none;">
+                        <label for="last-period-date">Enter the first day of your last period:</label>
+                        <input type="date" id="last-period-date">
+                    </div>
+
+                    <div id="due-date-input" class="input-section" style="display: none;">
+                        <label for="due-date">Enter Your Due Date:</label>
+                        <input type="date" id="due-date">
+                    </div>
+
+                    <button onclick="calculateDueDate()">Calculate Due Date</button>
+
+                    <h3>Result:</h3>
+                    <p id="due-date-result"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Pregnancy Due Date Calculator</h3>
+        <br>
+        <p>Our Pregnancy Due Date Calculator is a comprehensive tool designed to help expectant parents determine their
+            baby's due date. This user-friendly calculator offers multiple input methods, allowing you to choose the one
+            that best fits your situation. Understanding your due date is essential for planning and ensuring the health
+            and well-being of both mother and baby. With our calculator, you can easily and accurately estimate this
+            important date.</p>
+        <br>
+        <h3>Input Methods</h3>
+        <br>
+        <p>We offer three different input methods to calculate your due date:</p>
+        <br>
+        <h4>1. Ultrasound Date</h4>
+        <br>
+        <p>If you have had an ultrasound, you can use the date of your ultrasound to calculate your due date. Ultrasound
+            dating is one of the most accurate methods, especially when performed in the first trimester. Simply enter
+            the date of your ultrasound, and our calculator will estimate your due date based on the information
+            provided.</p>
+        <br>
+        <h4>2. Last Period Date</h4>
+        <br>
+        <p>Another common method is using the first day of your last menstrual period (LMP). This method assumes a
+            typical 28-day menstrual cycle and adds 280 days (40 weeks) to the start of your last period to estimate
+            your due date. This method is widely used and can provide a reliable estimate if you have regular menstrual
+            cycles.</p>
+        <br>
+        <h4>3. Due Date</h4>
+        <br>
+        <p>If you already know your due date, you can enter it directly into our calculator. This option is useful for
+            those who have already received an estimated due date from their healthcare provider. By entering your due
+            date, you can access additional information and track important milestones throughout your pregnancy.</p>
+        <br>
+        <h3>Using the Calculator</h3>
+        <br>
+        <p>Our calculator is designed to be simple and intuitive. Follow these steps to calculate your due date:</p>
+        <br>
+        <ol>
+            <li>Select your preferred input method from the dropdown menu.</li>
+            <li>Enter the required date in the corresponding field.</li>
+            <li>Click the "Calculate Due Date" button to view your estimated due date.</li>
+        </ol>
+        <br>
+        <p>After entering your information and clicking the button, your estimated due date will be displayed. This date
+            is an estimate based on the information provided and should be confirmed with your healthcare provider for
+            accuracy.</p>
+        <br>
+        <h3>Understanding Your Due Date</h3>
+        <br>
+        <p>Your due date marks the end of your 40-week pregnancy period. While it's common to refer to pregnancy as nine
+            months, it's actually a bit longer, usually around 40 weeks from the first day of your last menstrual
+            period. Knowing your due date can help you prepare for your baby's arrival and schedule important prenatal
+            appointments and milestones.</p>
+        <br>
+        <p>It's important to note that the due date is only an estimate. Most babies are born within two weeks before or
+            after the estimated due date. Regular prenatal care and check-ups with your healthcare provider will help
+            ensure that you and your baby are healthy and on track for a safe delivery.</p>
+        <br>
+        <h3>Benefits of Knowing Your Due Date</h3>
+        <br>
+        <p>Knowing your due date offers several benefits:</p>
+        <br>
+        <ul>
+            <li>Helps you plan and prepare for the arrival of your baby.</li>
+            <li>Allows you to schedule important prenatal appointments and tests.</li>
+            <li>Provides a timeline for tracking your baby's development.</li>
+            <li>Helps you manage work and personal commitments as you approach your due date.</li>
+        </ul>
+        <br>
+        <h3>Conclusion</h3>
+        <br>
+        <p>Our Pregnancy Due Date Calculator is a valuable tool for expectant parents. By providing multiple input
+            methods and an easy-to-use interface, we aim to make the process of estimating your due date as simple and
+            accurate as possible. Remember, while our calculator provides an estimate, it's essential to confirm your
+            due date with your healthcare provider. Use this information to plan and prepare for the exciting journey of
+            pregnancy and the arrival of your new baby.</p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./due.js"></script>
+</body>
+
+</html>

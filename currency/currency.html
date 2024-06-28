@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../salary/salary.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="./currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Currency Converter</h1>
+                <div class="calculator">
+                    <label for="amount">Enter Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+
+                    <label for="from-currency">From Currency:</label>
+                    <select id="from-currency">
+                        <option value="PKR">PKR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+
+                    <label for="to-currency">To Currency:</label>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="PKR">PKR</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+
+                    <button onclick="convertCurrency()">Convert</button>
+
+                    <h3>Results:</h3>
+                    <p id="converted-amount"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Currency Converter Calculator</h3>
+        <br>
+        The Currency Converter Calculator is an essential tool for anyone dealing with multiple currencies. It allows
+        users to quickly and easily convert amounts from one currency to another, making financial planning and
+        international transactions more straightforward. The interface is user-friendly, and the calculator supports a
+        variety of major currencies including PKR (Pakistani Rupee), USD (United States Dollar), EUR (Euro), GBP
+        (British Pound), and JPY (Japanese Yen).
+        <br><br>
+        <h3>How to Use the Currency Converter</h3>
+        <br>
+        To use the Currency Converter Calculator, follow these simple steps:
+        <br>
+        1. Enter the amount you wish to convert in the "Enter Amount" field. This should be a numerical value
+        representing the amount of money you want to convert.
+        <br>
+        2. Select the currency you are converting from using the "From Currency" dropdown menu. You can choose from PKR,
+        USD, EUR, GBP, or JPY.
+        <br>
+        3. Select the currency you wish to convert to using the "To Currency" dropdown menu. Again, you can choose from
+        PKR, USD, EUR, GBP, or JPY.
+        <br>
+        4. Click the "Convert" button to perform the conversion.
+        <br>
+        5. The converted amount will be displayed under the "Results" section, allowing you to see the equivalent value
+        in the target currency.
+        <br><br>
+        <h3>Benefits of Using the Currency Converter</h3>
+        <br>
+        The Currency Converter Calculator offers several benefits:
+        <br>
+        1. **Convenience**: It eliminates the need to manually calculate currency conversions, saving you time and
+        effort.
+        <br>
+        2. **Accuracy**: By using up-to-date exchange rates, the calculator ensures that you get accurate conversion
+        results.
+        <br>
+        3. **Flexibility**: Whether you are a traveler, a business person, or a student, the calculator can help you
+        manage your finances across different currencies.
+        <br>
+        4. **Ease of Use**: The intuitive design makes it easy for anyone to use, even if you are not familiar with
+        currency conversion processes.
+        <br><br>
+        <h3>Applications of the Currency Converter</h3>
+        <br>
+        The Currency Converter Calculator can be used in various scenarios:
+        <br>
+        1. **Traveling Abroad**: When planning a trip, you can use the calculator to convert your home currency into the
+        currency of your destination, helping you budget for expenses.
+        <br>
+        2. **Online Shopping**: If you are purchasing items from international websites, the calculator can help you
+        understand the cost in your local currency.
+        <br>
+        3. **Business Transactions**: Businesses dealing with international clients or suppliers can use the calculator
+        to manage invoices and payments.
+        <br>
+        4. **Investment Planning**: Investors can use the calculator to evaluate the value of foreign investments and
+        understand potential returns in their home currency.
+        <br><br>
+        <h3>Frequently Asked Questions</h3>
+        <br>
+        **Q: How often are the exchange rates updated?**
+        <br>
+        A: The exchange rates used by the Currency Converter Calculator are updated regularly to ensure accuracy. It is
+        important to check for the latest rates before making any significant financial decisions.
+        <br>
+        **Q: Can I convert between any two currencies?**
+        <br>
+        A: The calculator currently supports conversions between PKR, USD, EUR, GBP, and JPY. Additional currencies may
+        be added in future updates.
+        <br>
+        **Q: Is there a fee for using the Currency Converter Calculator?**
+        <br>
+        A: No, the Currency Converter Calculator is free to use. However, if you are converting money through a
+        financial institution, they may charge a fee or offer a different exchange rate.
+        <br><br>
+        <h3>Conclusion</h3>
+        <br>
+        The Currency Converter Calculator is a powerful tool designed to simplify the process of currency conversion.
+        With its ease of use, accuracy, and flexibility, it is an indispensable resource for anyone dealing with
+        multiple currencies. Whether you are traveling, shopping online, conducting business, or planning investments,
+        the calculator provides the information you need to make informed financial decisions. By using this tool, you
+        can ensure that you always know the value of your money, no matter where you are in the world.
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./currency.js"></script>
+</body>
+
+</html>

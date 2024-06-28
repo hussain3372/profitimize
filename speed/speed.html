@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./speed.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="./speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Speed Calculator</h1>
+                <div id="speed-calculator" class="calculator">
+                    <label for="distance">Enter Distance (km):</label>
+                    <input type="number" id="distance" placeholder="Enter distance">
+
+                    <label for="time">Enter Time (hours):</label>
+                    <input type="number" id="time" placeholder="Enter time">
+
+                    <button onclick="calculateSpeed()">Calculate Speed</button>
+
+                    <h3>Result:</h3>
+                    <p id="speed-result"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Speed Calculator Description</h3>
+        <p>
+            The Speed Calculator is a useful tool to calculate the speed of an object based on the distance traveled and
+            the time taken. It helps in determining how fast an object is moving. To use the calculator, simply enter
+            the distance in kilometers and the time in hours, then click the 'Calculate Speed' button to get the
+            result.<br><br>
+            <strong>Instructions:</strong><br>
+            - Enter the distance traveled in the 'Enter Distance (km)' field.<br>
+            - Enter the time taken in the 'Enter Time (hours)' field.<br>
+            - Click on the 'Calculate Speed' button to compute the speed.<br><br>
+            The result will be displayed in kilometers per hour (km/h). This tool is particularly useful for tracking
+            travel speeds, estimating journey times, and understanding motion dynamics.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./speed.js"></script>
+</body>
+
+</html>

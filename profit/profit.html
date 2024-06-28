@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./profit.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"> Calculator </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="./profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Profit Calculator</h1>
+                <div id="profit-calculator" class="calculator">
+                    <label for="cost-price">Cost Price:</label>
+                    <input type="number" id="cost-price" placeholder="Enter cost price">
+
+                    <label for="selling-price">Selling Price:</label>
+                    <input type="number" id="selling-price" placeholder="Enter selling price">
+
+                    <label for="expenses">Expenses (optional):</label>
+                    <input type="number" id="expenses" placeholder="Enter expenses">
+
+                    <button onclick="calculateProfit()">Calculate Profit</button>
+
+                    <h3>Results:</h3>
+                    <p id="gross-profit"></p>
+                    <p id="net-profit"></p>
+                    <p id="profit-margin"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+
+        <p>
+            The Profit Calculator is an essential tool for business owners, sales professionals, and anyone involved in
+            financial planning or analysis.<br>
+            It helps users quickly and accurately determine the profitability of their products or services by
+            calculating
+            key financial metrics such as gross profit, net profit, and profit margin.<br><br>
+
+        <h3>Features</h3><br>
+        1. <strong>Cost Price Input:</strong> Users can input the cost price of the product or service.<br>
+        This represents the amount spent to produce or acquire the product.<br><br>
+
+        2. <strong>Selling Price Input:</strong> Users can input the selling price of the product or service.<br>
+        This is the amount at which the product is sold to customers.<br><br>
+
+        3. <strong>Expenses Input (Optional):</strong> An optional field where users can enter any additional expenses
+        incurred during the selling process.<br>
+        This can include marketing costs, shipping fees, or any other overhead expenses.<br><br>
+
+        4. <strong>Calculate Profit Button:</strong> A button that, when clicked, calculates the financial metrics based
+        on
+        the provided inputs.<br><br>
+
+        5. <strong>Results Display:</strong><br>
+        <ul>
+            <li><strong>Gross Profit:</strong> Displays the gross profit, which is calculated as the difference between
+                the
+                selling price and the cost price.<br>
+                It shows the profit before deducting any additional expenses.<br><br></li>
+
+            <li><strong>Net Profit:</strong> Displays the net profit, calculated by subtracting the total expenses from
+                the
+                gross profit.<br>
+                This metric provides a clearer picture of actual profitability after all costs have been accounted
+                for.<br><br></li>
+
+            <li><strong>Profit Margin:</strong> Displays the profit margin percentage, calculated as (Net Profit /
+                Selling
+                Price) * 100.<br>
+                This metric indicates the profitability relative to the selling price.<br><br></li>
+        </ul>
+
+        <h3>User Interface</h3><br>
+        The Profit Calculator features a clean and user-friendly interface.<br>
+        The input fields are clearly labeled, making it easy for users to understand what data needs to be entered.<br>
+        The calculate button is prominently placed to ensure quick access.<br>
+        Results are displayed below the input fields in a clear and concise manner, allowing users to quickly interpret
+        the
+        financial metrics.<br><br>
+
+        <h3>How to Use</h3><br>
+        1. Enter the <strong>Cost Price</strong> of the product or service in the designated input field.<br><br>
+        2. Enter the <strong>Selling Price</strong> of the product or service in the respective field.<br><br>
+        3. Optionally, enter any <strong>Expenses</strong> incurred in the optional expenses field.<br><br>
+        4. Click the <strong>Calculate Profit</strong> button.<br><br>
+        5. View the calculated <strong>Gross Profit</strong>, <strong>Net Profit</strong>, and <strong>Profit
+            Margin</strong> displayed below the input fields.<br><br>
+        </p>
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./profit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="simple.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="./simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Simple Calculator</h1>
+                <div id="simple-calculator" class="calculator">
+                    <input type="text" id="display" disabled>
+                    <div class="buttons">
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('/')">/</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('*')">*</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('-')">-</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
+                        <button onclick="calculateResult()">=</button>
+                        <button onclick="appendToDisplay('+')">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/3.jpg" class="addimg" alt="">
+            </div>
+        </div>
+        <p>
+            The Simple Calculator is an essential tool for performing basic arithmetic operations with ease and
+            accuracy. It is designed to provide users with a straightforward interface that simplifies the
+            process of mathematical computation. This calculator can handle the fundamental arithmetic
+            functions, including addition, subtraction, multiplication, and division, which are crucial for
+            everyday calculations.
+            <br>
+            <br>
+            One of the primary features of the Simple Calculator is its user-friendly design. The interface is
+            clean and intuitive, ensuring that users can easily navigate through the functions without any
+            confusion. The display screen is prominently positioned to show the current input and the results of
+            the calculations clearly. This visibility is particularly beneficial when performing a series of
+            calculations, as it helps users track their progress and ensure accuracy.
+
+            <br>
+            <br>
+            The Simple Calculator includes a set of buttons that correspond to the numbers 0-9, as well as the
+            basic arithmetic operators: addition (+), subtraction (-), multiplication (*), and division (/).
+            These buttons are well-spaced and responsive, allowing for quick and efficient input. Additionally,
+            the calculator features a clear (C) button that instantly resets the display, enabling users to
+            start a new calculation without any hassle.
+
+            <br>
+            <br>
+            The addition function is used to calculate the sum of two or more numbers. This is one of the most
+            commonly used operations in arithmetic and is essential for tasks ranging from simple budgeting to
+            more complex financial planning. The subtraction function, on the other hand, allows users to find
+            the difference between numbers, which is useful in scenarios such as calculating expenses or
+            determining change.
+
+            <br>
+            <br>
+            Multiplication is another key function of the Simple Calculator. This operation is fundamental in
+            various aspects of daily life, including shopping, cooking, and even scientific research. By
+            multiplying numbers, users can quickly determine total quantities or costs, making this function
+            indispensable. Division, the fourth basic arithmetic operation, is equally important. It allows
+            users to split numbers into equal parts, which is crucial for tasks like dividing a bill among
+            friends or calculating the average of a set of numbers.
+
+            <br>
+            <br>
+            Beyond the basic arithmetic operations, the Simple Calculator is equipped with additional
+            functionalities to enhance its versatility. The decimal point (.) button enables users to perform
+            calculations involving non-integer values, which is essential for precision in measurements and
+            financial transactions. The equal (=) button is used to execute the calculation and display the
+            result on the screen, providing users with instant feedback on their input.
+
+            <br>
+            <br>
+            One of the standout features of the Simple Calculator is its ability to handle continuous
+            operations. Users can perform multiple calculations in a sequence without needing to clear the
+            display after each result. This functionality is particularly useful for complex calculations that
+            require several steps, as it saves time and reduces the likelihood of errors.
+
+            <br>
+            <br>
+            The clear (C) button is another valuable feature of the Simple Calculator. It allows users to
+            quickly reset the display and start a new calculation without any lingering data from previous
+            operations. This is especially important in situations where accuracy is paramount, such as
+            financial transactions or academic work.
+
+            <br>
+            <br>
+            In summary, the Simple Calculator is an indispensable tool for anyone who needs to perform basic
+            arithmetic operations efficiently and accurately. Its user-friendly design, combined with its
+            essential functions of addition, subtraction, multiplication, and division, makes it a versatile and
+            reliable companion for everyday calculations. Whether you're balancing a budget, cooking a recipe,
+            or solving a math problem, the Simple Calculator provides the functionality and ease of use needed
+            to get the job done.
+        </p>
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/2.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+    <script src="./simple.js"></script>
+</body>
+
+</html>

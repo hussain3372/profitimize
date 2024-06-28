@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./length.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="./length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Length Calculator</h1>
+                <div id="length-calculator" class="calculator">
+                    <label for="length-input">Enter Length:</label>
+                    <input type="number" id="length-input" placeholder="Enter length">
+
+                    <label for="unit-from">From:</label>
+                    <select id="unit-from">
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                        <option value="miles">Miles</option>
+                        <option value="inches">Inches</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="millimeters">Millimeters</option>
+                        <option value="micrometers">Micrometers</option>
+                        <option value="nanometers">Nanometers</option>
+                        <option value="yards">Yards</option>
+                        <option value="nautical miles">Nautical Miles</option>
+                        <option value="light years">Light Years</option>
+                        <option value="astronomical units">Astronomical Units</option>
+                        <option value="parsecs">Parsecs</option>
+                        <option value="angstroms">Angstroms</option>
+                        <option value="furlongs">Furlongs</option>
+                        <option value="fathoms">Fathoms</option>
+                        <option value="rods">Rods</option>
+                        <option value="chains">Chains</option>
+                        <option value="leagues">Leagues</option>
+                        <option value="picometers">Picometers</option>
+                    </select>
+
+                    <label for="unit-to">To:</label>
+                    <select id="unit-to">
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                        <option value="miles">Miles</option>
+                        <option value="inches">Inches</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="millimeters">Millimeters</option>
+                        <option value="micrometers">Micrometers</option>
+                        <option value="nanometers">Nanometers</option>
+                        <option value="yards">Yards</option>
+                        <option value="nautical miles">Nautical Miles</option>
+                        <option value="light years">Light Years</option>
+                        <option value="astronomical units">Astronomical Units</option>
+                        <option value="parsecs">Parsecs</option>
+                        <option value="angstroms">Angstroms</option>
+                        <option value="furlongs">Furlongs</option>
+                        <option value="fathoms">Fathoms</option>
+                        <option value="rods">Rods</option>
+                        <option value="chains">Chains</option>
+                        <option value="leagues">Leagues</option>
+                        <option value="picometers">Picometers</option>
+                    </select>
+
+                    <button onclick="calculateLength()">Convert Length</button>
+
+                    <h3>Result:</h3>
+                    <p id="converted-length"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Description</h3>
+        <p>
+            The Length Calculator is a versatile and easy-to-use tool designed to help you convert various units of
+            length effortlessly. Whether you are a student, a professional, or someone who often deals with different
+            measurements, this calculator provides a reliable solution for all your length conversion needs.<br><br>
+
+            To use the Length Calculator, you simply need to enter the length value you want to convert and select the
+            unit from which you are converting and the unit to which you are converting. The available units cover a
+            wide range, including commonly used measurements such as meters, kilometers, feet, miles, and inches, as
+            well as less common ones like light years, astronomical units, parsecs, and angstroms.<br><br>
+
+            Our Length Calculator supports the conversion of lengths in both metric and imperial units. This feature is
+            particularly useful for those who work in fields that require precise measurements, such as engineering,
+            construction, science, and everyday tasks. For instance, if you are converting measurements for a project,
+            this tool ensures accuracy and efficiency by providing quick and precise conversions.<br><br>
+
+            The calculator's interface is user-friendly and intuitive, allowing you to perform conversions in just a few
+            clicks. Simply enter the length value in the input field labeled "Enter Length," choose the unit of the
+            input value from the "From" dropdown menu, and select the unit you wish to convert to from the "To" dropdown
+            menu. After entering the necessary information, click the "Convert Length" button to see the result
+            instantly displayed below.<br><br>
+
+            For example, if you need to convert 100 meters to feet, enter "100" in the length input field, select
+            "Meters" from the "From" dropdown menu, and choose "Feet" from the "To" dropdown menu. Clicking the "Convert
+            Length" button will display the result, showing you the equivalent length in feet.<br><br>
+
+            This tool is designed to be accessible on various devices, whether you are using a desktop computer, a
+            tablet, or a smartphone. The responsive design ensures that you can perform length conversions on-the-go,
+            making it a handy tool for professionals working in the field or students needing quick conversions during
+            their studies.<br><br>
+
+            Additionally, the Length Calculator includes some of the more obscure units of length, such as micrometers,
+            nanometers, picometers, and furlongs. This wide array of options makes it a comprehensive tool for anyone
+            who needs to work with different scales of measurement, from everyday tasks to specialized scientific
+            research.<br><br>
+
+            Understanding the importance of accurate measurements, our Length Calculator is built to provide reliable
+            and precise conversions. Whether you are converting small lengths in nanometers or large distances in light
+            years, this tool ensures you get accurate results every time.<br><br>
+
+            The Length Calculator also supports conversions for historical and maritime units such as nautical miles,
+            fathoms, rods, chains, and leagues. These units are particularly useful for historians, navigators, and
+            those interested in maritime activities. For instance, converting nautical miles to kilometers can be done
+            effortlessly, aiding in navigation and maritime calculations.<br><br>
+
+            In addition to the extensive range of units and user-friendly interface, the Length Calculator is also
+            designed to provide quick results, saving you time and effort. Instead of manually calculating conversions
+            or looking up conversion factors, you can rely on this tool to do the work for you, ensuring efficiency and
+            accuracy.<br><br>
+
+            Whether you are a student needing to convert measurements for a science project, a professional in
+            construction needing precise conversions for materials, or someone simply curious about different units of
+            length, the Length Calculator is an indispensable tool. Its wide range of supported units, ease of use, and
+            accuracy make it a valuable resource for anyone dealing with length measurements.<br><br>
+
+            Try our Length Calculator today and experience the convenience of accurate and quick length conversions.
+            From everyday tasks to professional projects, this tool is designed to meet all your length conversion needs
+            with precision and ease.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./length.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./fat.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Calculator</a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="../age/age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="./height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad">
+                <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Body Fat Calculator</h1>
+                <div id="body-fat-calculator" class="calculator">
+
+                    <label>Gender:</label>
+                    <div class="radio">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="Enter age">
+
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight">
+
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter height">
+
+
+
+                    <button onclick="calculateBodyFat()">Calculate Body Fat</button>
+
+                    <h3>Results:</h3>
+                    <p id="result-body-fat"></p>
+                    <p id="result-category"></p>
+                    <p id="result-fat-mass"></p>
+                    <p id="result-lean-mass"></p>
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad">
+                <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Description</h3>
+        <p>
+            The Body Fat Calculator is a comprehensive tool designed to help individuals determine their body fat
+            percentage accurately. It takes into account essential factors such as gender, age, weight, and height to
+            provide a personalized calculation. Understanding your body fat percentage is crucial for assessing your
+            overall health and fitness levels. This calculator is easy to use and provides quick results, making it an
+            excellent resource for anyone looking to monitor their body composition.
+            <br><br>
+            <strong>Gender:</strong> The first step in using the Body Fat Calculator is selecting your gender. This is
+            important because body fat distribution and composition can vary significantly between males and females.
+            The calculator provides two options: male and female. Simply click on the appropriate radio button to select
+            your gender.
+            <br><br>
+            <strong>Age:</strong> Age is another critical factor in determining body fat percentage. As we age, our body
+            composition changes, and understanding these changes can help in setting realistic fitness and health goals.
+            Enter your age in the designated input field. Make sure to input your correct age for accurate results.
+            <br><br>
+            <strong>Weight:</strong> The next step involves entering your weight. The Body Fat Calculator uses weight as
+            one of the parameters to determine the body fat percentage. Enter your weight in kilograms in the input
+            field provided. Accurate weight measurement is crucial for reliable results.
+            <br><br>
+            <strong>Height:</strong> Height is another essential measurement needed for the calculation. Enter your
+            height in centimeters in the designated input field. This information, combined with your weight, helps in
+            assessing your body mass index (BMI), which is a component of the body fat calculation.
+            <br><br>
+            Once you have entered all the required information, click on the "Calculate Body Fat" button to obtain your
+            results. The calculator will process the data and provide you with detailed results, including your body fat
+            percentage, body fat category, fat mass, and lean mass.
+            <br><br>
+            <strong>Results:</strong> The results section of the Body Fat Calculator provides a comprehensive analysis
+            of your body composition.
+            <br><br>
+            <strong>Body Fat Percentage:</strong> This is the primary result provided by the calculator. It represents
+            the proportion of your body weight that is made up of fat. Knowing your body fat percentage can help you
+            assess your fitness level and make informed decisions about your diet and exercise routines.
+            <br><br>
+            <strong>Body Fat Category:</strong> Based on your body fat percentage, the calculator will classify you into
+            different categories such as underweight, healthy, overweight, or obese. This categorization helps in
+            understanding where you stand in terms of health and fitness.
+            <br><br>
+            <strong>Fat Mass:</strong> This result indicates the total amount of fat in your body. It is calculated by
+            multiplying your body fat percentage by your total weight. Monitoring your fat mass is essential for
+            tracking changes in body composition over time.
+            <br><br>
+            <strong>Lean Mass:</strong> Lean mass represents the weight of everything in your body except fat, including
+            muscles, bones, water, and organs. This is an important metric for understanding your overall muscle mass
+            and physical strength.
+            <br><br>
+            The Body Fat Calculator is an invaluable tool for anyone looking to gain insights into their body
+            composition. Whether you are on a fitness journey, trying to lose weight, or simply want to maintain a
+            healthy lifestyle, this calculator provides you with the information you need to track your progress and
+            make informed decisions about your health. Remember, maintaining a healthy body fat percentage is crucial
+            for overall well-being, and using this calculator regularly can help you stay on top of your fitness goals.
+        </p>
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+    <script src="./fat.js"></script>
+</body>
+
+</html>

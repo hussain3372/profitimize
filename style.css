@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+.maincontent {
+    max-width: 1440px;  
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 52, 52);
+    color: black;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    padding-top: 50px;
+   
+}
+.simplebtn {
+    color: white;
+    background: purple;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navclass {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.placeholder-ad {
+    /* width: 50px; */
+    /* height: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.addimg {
+    width: 330px;
+    height: 500px;
+}
+.addimg1 {
+    width: 1436px;
+    height: 350px;
+}
+
+.left-ad {
+    margin-right: 20px;
+}
+
+.right-ad {
+    margin-left: 20px;
+}
+
+.main {
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.bottom-ad {
+    width: 100%;
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 110px;
+}
+
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.minifooter {
+    background-color: rgb(61, 52, 52);
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .addimg {
+        width: 100%;
+        height: 500px;
+    }
+    .addimg1 {
+        width: 100%;
+        height: 350px;
+    }
+    .left-ad {
+        margin-right: 0px;
+        margin-bottom: 150px;
+    }
+    .right-ad {
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+}

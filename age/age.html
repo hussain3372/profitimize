@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./age.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                Calculator
+            </a>
+        </div>
+    </header>
+    <nav class="maincontent">
+        <ul>
+            <li><a href="../simple/simple.html" class="simplebtn">Simple Calculator</a></li>
+            <li><a href="../scientific/scientific.html" class="simplebtn">Scientific Calculator</a></li>
+            <li><a href="../profit/profit.html" class="simplebtn">Profit Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Tax Calculator</a></li>
+            <li><a href="../currency/currency.html" class="simplebtn">Currency Calculator</a></li>
+            <li><a href="../loan/loan.html" class="simplebtn">Loan Calculator</a></li>
+            <li><a href="../due_date/due.html" class="simplebtn">Pregnancy Calculator</a></li>
+            <li><a href="../length/length.html" class="simplebtn">Length Calculator</a></li>
+            <li><a href="../area/area.html" class="simplebtn">Area Calculator</a></li>
+            <li><a href="../volume/volume.html" class="simplebtn">Volume Calculator</a></li>
+            <li><a href="../temp/temp.html" class="simplebtn">Temperature Calculator</a></li>
+            <li><a href="./age.html" class="simplebtn">Age Calculator</a></li>
+            <li><a href="../percentage/percentage.html" class="simplebtn">Percentage Calculator</a></li>
+            <li><a href="../speed/speed.html" class="simplebtn">Speed Calculator</a></li>
+            <li><a href="../distance/distance.html" class="simplebtn">Distance Calculator</a></li>
+            <li><a href="../time/time.html" class="simplebtn">Time Calculator</a></li>
+            <li><a href="../weight/weight.html" class="simplebtn">Weight Calculator</a></li>
+            <li><a href="../height/height.html" class="simplebtn">Height Calculator</a></li>
+            <li><a href="../fat/fat.html" class="simplebtn">Body Fat Calculator</a></li>
+            <li><a href="../salary/salary.html" class="simplebtn">Salary Calculator</a></li>
+            <li><a href="../tax/tax.html" class="simplebtn">Sales Tax Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="maincontent">
+        <div class="content">
+            <div class="placeholder-ad left-ad"> <img src="../images/1.jpg" class="addimg" alt="">
+            </div>
+            <div class="main">
+                <h1>Age Calculator</h1>
+                <div id="age-calculator" class="calculator">
+                    <label for="dob">Enter Date of Birth:</label>
+                    <input type="date" id="dob">
+
+                    <label for="current-date">Enter Current Date:</label>
+                    <input type="date" id="current-date" onchange="updateClock()">
+
+                    <h3>Current Time:</h3>
+                    <p id="current-time"></p>
+
+                    <button onclick="calculateAge()">Calculate Age</button>
+
+                    <h3>Result:</h3>
+                    <p id="age-result"></p>
+
+
+                </div>
+            </div>
+            <div class="placeholder-ad right-ad"> <img src="../images/4.avif" class="addimg" alt="">
+            </div>
+        </div>
+        <h3>Age Calculator Description</h3>
+        <br>
+        The Age Calculator is a simple yet powerful tool designed to calculate the age of an individual based on their
+        date of birth and the current date. This calculator is user-friendly, with a straightforward interface that
+        makes it easy for anyone to use. Whether you're planning a birthday, organizing events, or simply curious about
+        your exact age, this calculator provides an accurate and immediate result.
+        <br><br>
+        To use the Age Calculator, follow these steps:
+        <br><br>
+        1. **Enter Date of Birth:** Begin by entering your date of birth in the designated input field. This is crucial
+        as it serves as the starting point for the age calculation.
+        <br><br>
+        2. **Enter Current Date:** Next, input the current date in the second date field. This allows the calculator to
+        determine the total time elapsed since your birth.
+        <br><br>
+        3. **View Current Time:** The calculator also displays the current time, adding a dynamic element to your age
+        calculation. This feature updates in real-time, ensuring your results are as precise as possible.
+        <br><br>
+        4. **Calculate Age:** Once both dates are entered, simply click the "Calculate Age" button. The calculator will
+        process the information and display your age in years, months, and days. This comprehensive breakdown provides a
+        clear understanding of your age.
+        <br><br>
+        The Age Calculator is not just limited to determining the age of individuals. It can be used in various
+        scenarios where calculating the difference between two dates is necessary. For example, you can use it to find
+        out the duration of an event, the age of historical artifacts, or the tenure of an employee in a company.
+        <br><br>
+        In addition to its primary function, the Age Calculator includes an aesthetically pleasing design with
+        placeholder advertisements to enhance the user experience. These ads are strategically placed on the left and
+        right sides, as well as at the bottom of the page, ensuring they do not interfere with the main content.
+        <br><br>
+        The interface is designed to be intuitive. The "Enter Date of Birth" and "Enter Current Date" labels guide the
+        user through the process, while the "Calculate Age" button is prominently displayed for easy access. The result
+        section is clearly marked, allowing users to quickly find and interpret their age calculation.
+        <br><br>
+        The Age Calculator is part of a comprehensive suite of tools offered on our website, including Simple
+        Calculator, Scientific Calculator, Profit Calculator, and many more. Each tool is designed to provide specific
+        functionalities, catering to diverse needs and preferences.
+        <br><br>
+        Our Age Calculator stands out for its accuracy and ease of use. By leveraging modern web technologies, it
+        delivers fast and reliable results. The inclusion of current time display adds a unique touch, making it more
+        engaging and informative.
+        <br><br>
+        This tool is ideal for anyone looking to quickly determine their age or the duration between two dates. It
+        eliminates the need for manual calculations, reducing the risk of errors and saving valuable time. Whether
+        you're a student, professional, or someone planning a special event, the Age Calculator is an indispensable
+        tool.
+        <br><br>
+        Furthermore, our Age Calculator is mobile-friendly, ensuring you can access and use it on any device, be it a
+        smartphone, tablet, or desktop. This flexibility allows you to calculate ages on the go, whenever and wherever
+        you need it.
+        <br><br>
+        In conclusion, the Age Calculator is a versatile and essential tool for anyone needing to calculate the time
+        elapsed between two dates. Its user-friendly interface, real-time updates, and accurate results make it a
+        standout choice in the realm of online calculators. Explore the full range of our calculators to find more tools
+        that can assist you in various aspects of life and work.
+        <br><br>
+        Thank you for choosing our Age Calculator. We hope it meets your needs and provides a seamless and enjoyable
+        user experience.
+
+        <footer>
+            <div class="placeholder-ad bottom-ad">
+                <img src="../images/3.jpg" class="addimg1" alt="">
+            </div>
+        </footer>
+    </div>
+    <div class="footerparent">
+        <footer class="minifooter">
+            <h4>© copyright 2024 vordx</h4>
+        </footer>
+    </div>
+
+    <script src="./age.js"></script>
+</body>
+
+</html>
